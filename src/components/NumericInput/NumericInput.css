@@ -1,0 +1,16 @@
+.NumericInput {
+  display: inline-block;
+}
+
+.input {
+  width: 50px;
+
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.label {
+  padding-left: 5px;
+}

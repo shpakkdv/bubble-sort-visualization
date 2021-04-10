@@ -1,0 +1,20 @@
+.ArrayVisualization {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: antiquewhite;
+  padding-top: 10px;
+}
+
+.numberColumn {
+  background-color: aquamarine;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+.VisualizationControls {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fbd7a7;
+}
