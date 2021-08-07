@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bubble-sort-visualization/static/css/main.dff0698f.chunk.css",
-    "main.js": "/bubble-sort-visualization/static/js/main.18aee69c.chunk.js",
+    "main.css": "/bubble-sort-visualization/static/css/main.afcfdb7d.chunk.css",
+    "main.js": "/bubble-sort-visualization/static/js/main.8b8f0f6e.chunk.js",
     "runtime-main.js": "/bubble-sort-visualization/static/js/runtime-main.c0e08961.js",
     "static/js/2.2de82559.chunk.js": "/bubble-sort-visualization/static/js/2.2de82559.chunk.js",
     "static/js/3.09b333d2.chunk.js": "/bubble-sort-visualization/static/js/3.09b333d2.chunk.js",
@@ -11,7 +11,7 @@
   "entrypoints": [
     "static/js/runtime-main.c0e08961.js",
     "static/js/2.2de82559.chunk.js",
-    "static/css/main.dff0698f.chunk.css",
-    "static/js/main.18aee69c.chunk.js"
+    "static/css/main.afcfdb7d.chunk.css",
+    "static/js/main.8b8f0f6e.chunk.js"
   ]
 }
