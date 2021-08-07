@@ -7,7 +7,7 @@ interface NumericInputProps {
   value: number | '';
   label?: string;
   disabled?: boolean;
-  onChange: (value: number) => void
+  onChange: (value: number) => void;
   range: readonly [number, number];
   step?: number;
   integer?: boolean;
@@ -52,7 +52,7 @@ export const NumericInput: React.FC<NumericInputProps> = ({
       return;
     }
 
-    const numericValue = integer ? parseInt(String(currentValue)) : Number(currentValue);
+    const numericValue = integer ? parseInt(String(currentValue), 10) : Number(currentValue);
     const newValue = Math.min(max, Math.max(numericValue, min));
 
     if (newValue !== value) {
@@ -66,7 +66,6 @@ export const NumericInput: React.FC<NumericInputProps> = ({
       onBlur(event as any);
     }
   }, [onBlur]);
-
 
   return (
     <div className="NumericInput">
@@ -86,4 +85,4 @@ export const NumericInput: React.FC<NumericInputProps> = ({
       {label && <label className="label" htmlFor={id}>{`${label} (${min} - ${max})`}</label>}
     </div>
   );
-}
+};

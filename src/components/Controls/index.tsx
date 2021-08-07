@@ -21,13 +21,13 @@ interface ControlsProps {
 
 export const Controls: React.FC<ControlsProps> = ({
   isSorted,
-  
+
   arrayGenerator,
   arrayValuesRange,
   arrayLengthRange,
 
-  setArrayValuesRange,
-  setArrayLengthRange,
+  // setArrayValuesRange,
+  // setArrayLengthRange,
   setArrayGenerator,
   setArray,
 }) => {
@@ -88,4 +88,4 @@ export const Controls: React.FC<ControlsProps> = ({
       </div>
     </div>
   );
-}
+};

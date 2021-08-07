@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { bubbleSort } from '../../utils/bubbleSort';
 import { createRandomArray } from '../../utils/createRandomArray';
@@ -24,11 +24,9 @@ export const App: React.FC = () => {
       <ArrayVisualization array={array} />
       <Controls
         isSorted={isSorted}
-
         arrayGenerator={arrayGenerator}
         arrayValuesRange={arrayValuesRange}
         arrayLengthRange={arrayLengthRange}
-
         setArrayValuesRange={setArrayValuesRange}
         setArrayLengthRange={setArrayLengthRange}
         setArrayGenerator={setArrayGenerator}
@@ -36,4 +34,4 @@ export const App: React.FC = () => {
       />
     </div>
   );
-}
+};

@@ -4,7 +4,6 @@ import { NumericInput } from '../NumericInput';
 
 import './ArrayVisualization.css';
 
-
 interface ArrayVisualizationProps {
   array: number[];
 }
@@ -19,6 +18,7 @@ export const ArrayVisualization: React.FC<ArrayVisualizationProps> = ({ array })
       <div className="ArrayVisualization">
         {array.map((number, index) => (
           <div
+            // eslint-disable-next-line react/no-array-index-key
             key={index}
             className="numberColumn"
             style={{ width, height: ratio * number }}
@@ -33,7 +33,7 @@ export const ArrayVisualization: React.FC<ArrayVisualizationProps> = ({ array })
       />
     </>
   );
-}
+};
 
 interface VisualizationControlsProps {
   width: number;
@@ -47,23 +47,21 @@ export const VisualizationControls: React.FC<VisualizationControlsProps> = ({
   setWidth,
   maxHeight,
   setHeight,
-}) => {
-  return (
-    <div className="VisualizationControls">
-      <NumericInput
-          id="max-height"
-          label="Max height (px)"
-          value={maxHeight}
-          onChange={setHeight}
-          range={[10, 1000]}
-      />
-      <NumericInput
-          id="width"
-          label="Width (px)"
-          value={width}
-          onChange={setWidth}
-          range={[5, 400]}
-      />
-    </div>
-  );
-}
+}) => (
+  <div className="VisualizationControls">
+    <NumericInput
+      id="max-height"
+      label="Max height (px)"
+      value={maxHeight}
+      onChange={setHeight}
+      range={[10, 1000]}
+    />
+    <NumericInput
+      id="width"
+      label="Width (px)"
+      value={width}
+      onChange={setWidth}
+      range={[5, 400]}
+    />
+  </div>
+);
